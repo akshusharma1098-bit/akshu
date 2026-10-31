@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura Studio | Modern Digital & Creative Agency</title>
+  <meta name="description" content="We help small businesses build high-converting websites, elevate their brand identity, and accelerate growth with smart digital solutions.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+
+  <!-- ==================== NAVIGATION BAR ==================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" id="brand-logo" aria-label="Aura Studio Home">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+        </div>
+        <span class="logo-text">Aura<span class="gradient-text">Studio</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active" id="nav-link-home">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link" id="nav-link-about">About Us</a></li>
+          <li class="nav-item"><a href="#services" class="nav-link" id="nav-link-services">Services</a></li>
+          <li class="nav-item"><a href="#testimonials" class="nav-link" id="nav-link-reviews">Testimonials</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link" id="nav-link-contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Header Actions (Theme Toggle & CTA) -->
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Switch between light and dark mode" title="Toggle Light/Dark Theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- CTA Button -->
+        <a href="#contact" class="btn btn-primary nav-cta-btn" id="nav-cta-btn">
+          <span>Get Started</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-arrow">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="mobile-toggle-btn" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== 1. HOME (HERO) SECTION ==================== -->
+    <section class="hero-section" id="home">
+      <!-- Background Glow Effects -->
+      <div class="glow-orb glow-orb-1" aria-hidden="true"></div>
+      <div class="glow-orb glow-orb-2" aria-hidden="true"></div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span class="badge-dot"></span>
+            <span>Trusted by 150+ Growing Businesses</span>
+          </div>
+          
+          <h1 class="hero-title">
+            Transforming Ideas into <span class="gradient-text">Exceptional</span> Digital Growth
+          </h1>
+          
+          <p class="hero-subtitle">
+            We partner with passionate small businesses and entrepreneurs to build high-performing websites, modern brand identities, and reliable digital marketing that converts visitors into customers.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#services" class="btn btn-primary btn-lg" id="hero-btn-services">
+              <span>Explore Our Services</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-arrow">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary btn-lg" id="hero-btn-contact">
+              <span>Book Free Consultation</span>
+            </a>
+          </div>
+
+          <div class="hero-trust">
+            <div class="trust-stars">
+              <span class="star-icon">★</span>
+              <span class="star-icon">★</span>
+              <span class="star-icon">★</span>
+              <span class="star-icon">★</span>
+              <span class="star-icon">★</span>
+            </div>
+            <div class="trust-text">
+              <strong>4.9 / 5.0 Rating</strong> &mdash; <span>from 150+ verified client reviews</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Showcase Card -->
+        <div class="hero-visual">
+          <div class="glass-card hero-preview-card">
+            <div class="card-header-bar">
+              <div class="window-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="card-address-bar">
+                <span>aurastudio.agency/success</span>
+              </div>
+            </div>
+
+            <div class="preview-hero-inner">
+              <div class="preview-chip">✨ Live Client Dashboard</div>
+              <h3 class="preview-title">Monthly Business Growth</h3>
+              <p class="preview-desc">Real-time performance metrics delivered to our clients.</p>
+
+              <div class="preview-metric-grid">
+                <div class="metric-box">
+                  <div class="metric-label">Client Revenue</div>
+                  <div class="metric-value gradient-text">+184%</div>
+                  <div class="metric-trend">↗ Year-over-year</div>
+                </div>
+                <div class="metric-box">
+                  <div class="metric-label">Organic Visitors</div>
+                  <div class="metric-value">42.5k</div>
+                  <div class="metric-trend">↗ Up from 8.2k</div>
+                </div>
+                <div class="metric-box">
+                  <div class="metric-label">Conversion Rate</div>
+                  <div class="metric-value">5.8%</div>
+                  <div class="metric-trend">↗ 2.4x industry avg</div>
+                </div>
+              </div>
+
+              <!-- Animated Chart Simulation -->
+              <div class="preview-chart">
+                <div class="chart-bar" style="--height: 35%;"><span>Jan</span></div>
+                <div class="chart-bar" style="--height: 50%;"><span>Feb</span></div>
+                <div class="chart-bar" style="--height: 45%;"><span>Mar</span></div>
+                <div class="chart-bar" style="--height: 70%;"><span>Apr</span></div>
+                <div class="chart-bar" style="--height: 85%;"><span>May</span></div>
+                <div class="chart-bar active" style="--height: 100%;"><span>Jun</span></div>
+              </div>
+            </div>
+
+            <!-- Floating Badge Card 1 -->
+            <div class="floating-badge badge-top-right">
+              <div class="badge-icon green-glow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <div class="badge-content">
+                <strong>Project Approved</strong>
+                <small>Ready to scale online</small>
+              </div>
+            </div>
+
+            <!-- Floating Badge Card 2 -->
+            <div class="floating-badge badge-bottom-left">
+              <div class="badge-icon purple-glow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+              </div>
+              <div class="badge-content">
+                <strong>Speed Score: 99/100</strong>
+                <small>Google Core Web Vitals</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 2. ABOUT US SECTION ==================== -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="section-badge-center">
+          <span class="section-tag">About Aura Studio</span>
+          <h2 class="section-heading">We Build Digital Success For <span class="gradient-text">Small Businesses</span></h2>
+          <p class="section-lead">
+            Founded with a singular mission: to make world-class design, modern web technology, and strategic marketing accessible, understandable, and profitable for ambitious business owners.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Story Card -->
+          <div class="about-story-card glass-card">
+            <div class="story-tag">Our Philosophy</div>
+            <h3 class="story-title">No Tech Jargon. Just Tangible Results.</h3>
+            <p>
+              Many small businesses struggle with agencies that overcomplicate technology, deliver cookie-cutter templates, or disappear after launch. We believe in total transparency, handcrafted design, and lasting partnerships.
+            </p>
+            <p>
+              Whether you are launching your first website or modernizing an established brand, we take care of the heavy lifting so you can focus on running your business with peace of mind.
+            </p>
+
+            <ul class="about-checklist">
+              <li>
+                <div class="check-icon">✓</div>
+                <div><strong>100% Mobile Optimized:</strong> Looks flawless on iPhones, Androids, tablets, and desktops.</div>
+              </li>
+              <li>
+                <div class="check-icon">✓</div>
+                <div><strong>Speed & Search Engine Ready:</strong> Built for quick page loads and higher Google rankings.</div>
+              </li>
+              <li>
+                <div class="check-icon">✓</div>
+                <div><strong>Dedicated Ongoing Support:</strong> Real humans who answer your questions promptly.</div>
+              </li>
+            </ul>
+
+            <div class="story-action">
+              <a href="#contact" class="btn btn-outline" id="about-consult-btn">Talk To Our Team</a>
+            </div>
+          </div>
+
+          <!-- Stats & Highlights Card Grid -->
+          <div class="about-stats-column">
+            <div class="stat-card glass-card">
+              <div class="stat-number gradient-text" data-target="250">250+</div>
+              <div class="stat-title">Websites Launched</div>
+              <p class="stat-desc">From local boutiques to fast-growing consulting firms.</p>
+            </div>
+
+            <div class="stat-card glass-card">
+              <div class="stat-number gradient-text" data-target="99">99%</div>
+              <div class="stat-title">Client Satisfaction</div>
+              <p class="stat-desc">Clients who rate our communication and quality as exceptional.</p>
+            </div>
+
+            <div class="stat-card glass-card">
+              <div class="stat-number gradient-text" data-target="8">8+</div>
+              <div class="stat-title">Years of Craft</div>
+              <p class="stat-desc">Hands-on experience in modern web design and digital strategy.</p>
+            </div>
+
+            <div class="stat-card glass-card highlight-card">
+              <div class="stat-icon-star">🌟</div>
+              <div class="stat-title highlight-text">100% Beginner Friendly</div>
+              <p class="stat-desc">You do not need any coding knowledge. We guide you step by step with clear instructions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 3. SERVICES SECTION ==================== -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <div class="section-badge-center">
+          <span class="section-tag">What We Do</span>
+          <h2 class="section-heading">Solutions Designed To <span class="gradient-text">Grow Your Revenue</span></h2>
+          <p class="section-lead">
+            Everything your business needs to establish a strong online presence, build trust with customers, and drive measurable sales.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service Card 1 -->
+          <div class="service-card glass-card" id="service-card-1">
+            <div class="service-header">
+              <div class="service-icon-wrapper color-cyan">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <span class="service-badge">Most Popular</span>
+            </div>
+
+            <h3 class="service-title">Web Design &amp; Development</h3>
+            <p class="service-description">
+              Custom, high-speed, and conversion-focused websites engineered to showcase your business and convert visitors into qualified leads.
+            </p>
+
+            <ul class="service-features">
+              <li>
+                <span class="bullet-dot"></span>
+                <span>Fully responsive mobile &amp; tablet layout</span>
+              </li>
+              <li>
+                <span class="bullet-dot"></span>
+                <span>Fast loading speeds (under 1.5 seconds)</span>
+              </li>
+              <li>
+                <span class="bullet-dot"></span>
+                <span>Secure contact forms &amp; interactive maps</span>
+              </li>
+              <li>
+                <span class="bullet-dot"></span>
+                <span>Clean, beginner-friendly maintenance guide</span>
+              </li>
+            </ul>
+
+            <div class="service-footer">
+              <div class="service-pricing">
+                <span class="price-label">Starting at</span>
+                <span class="price-value">$799</span>
+              </div>
+              <button class="btn btn-primary btn-sm service-select-btn" data-service="Web Design & Development" aria-label="Select Web Design & Development Service">
+                <span>Select Plan</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Service Card 2 -->
+          <div class="service-card glass-card featured" id="service-card-2">
+            <div class="featured-ribbon">Best Value</div>
+            <div class="service-header">
+              <div class="service-icon-wrapper color-purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                </svg>
+              </div>
+              <span class="service-badge">Complete Package</span>
+            </div>
+
+            <h3 class="service-title">Brand Identity &amp; Strategy</h3>
+            <p class="service-description">
+              Create a distinct, memorable brand that wins client trust. We design logos, color palettes, and typography guidelines tailored to your audience.
+            </p>
+
+            <ul class="service-features">
+              <li>
+                <span class="bullet-dot"></span>
+                <span>Modern custom logo design &amp; icon set</span>
+              </li>
+              <li>
+                <span class="bullet-dot"></span>
+                <span>Curated color palette &amp; font styling guidelines</span>
+              </li>
+              <li>
+                <span class="bullet-dot"></span>
+                <span>Social media banner &amp; business card kits</span>
+              </li>
+              <li>
+                <span class="bullet-dot"></span>
+                <span>Complete vector source files (ready for print)</span>
+              </li>
+            </ul>
+
+            <div class="service-footer">
+              <div class="service-pricing">
+                <span class="price-label">Starting at</span>
+                <span class="price-value">$499</span>
+              </div>
+              <button class="btn btn-primary btn-sm service-select-btn" data-service="Brand Identity & Strategy" aria-label="Select Brand Identity & Strategy Service">
+                <span>Select Plan</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div class="service-card glass-card" id="service-card-3">
+            <div class="service-header">
+              <div class="service-icon-wrapper color-emerald">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+              </div>
+              <span class="service-badge">Growth Driver</span>
+            </div>
+
+            <h3 class="service-title">Local SEO &amp; Growth Marketing</h3>
+            <p class="service-description">
+              Get discovered by real customers searching for your services on Google and Maps. Practical search optimization that generates steady inquiries.
+            </p>
+
+            <ul class="service-features">
+              <li>
+                <span class="bullet-dot"></span>
+                <span>Google Business Profile setup &amp; optimization</span>
+              </li>
+              <li>
+                <span class="bullet-dot"></span>
+                <span>Keyword research for your city and niche</span>
+              </li>
+              <li>
+                <span class="bullet-dot"></span>
+                <span>On-page technical SEO &amp; metadata tagging</span>
+              </li>
+              <li>
+                <span class="bullet-dot"></span>
+                <span>Monthly ranking report &amp; traffic insights</span>
+              </li>
+            </ul>
+
+            <div class="service-footer">
+              <div class="service-pricing">
+                <span class="price-label">Starting at</span>
+                <span class="price-value">$399<small>/mo</small></span>
+              </div>
+              <button class="btn btn-primary btn-sm service-select-btn" data-service="Local SEO & Growth Marketing" aria-label="Select Local SEO & Growth Marketing Service">
+                <span>Select Plan</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Banner for Custom Requests -->
+        <div class="custom-solution-banner glass-card">
+          <div class="banner-text">
+            <h3>Need a custom solution or personalized quote?</h3>
+            <p>Every business is unique. We tailor our packages to match your exact goals and budget.</p>
+          </div>
+          <a href="#contact" class="btn btn-secondary" id="custom-quote-btn">Request Custom Estimate</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS / SOCIAL PROOF ==================== -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-badge-center">
+          <span class="section-tag">Client Feedback</span>
+          <h2 class="section-heading">Loved By Founders &amp; <span class="gradient-text">Local Businesses</span></h2>
+          <p class="section-lead">Here is what our clients have to say about working with Aura Studio.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card glass-card">
+            <div class="stars-row">★★★★★</div>
+            <p class="testimonial-quote">
+              "As someone with zero tech skills, working with Aura Studio was a breath of fresh air. They built our boutique website in under two weeks, and our weekly inquiries have doubled since!"
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar avatar-1">SJ</div>
+              <div class="author-info">
+                <strong>Sarah Jenkins</strong>
+                <span>Owner, Bloom Haven Florals</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card glass-card">
+            <div class="stars-row">★★★★★</div>
+            <p class="testimonial-quote">
+              "The design is gorgeous and fast. Customers constantly compliment how clean our site looks on their phones. The team explained everything without confusing jargon."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar avatar-2">MR</div>
+              <div class="author-info">
+                <strong>Marcus Rodriguez</strong>
+                <span>Founder, Apex Advisory Group</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card glass-card">
+            <div class="stars-row">★★★★★</div>
+            <p class="testimonial-quote">
+              "Our Google ranking shot to the top 3 in our city within 60 days. Aura Studio delivered beyond what they promised. Easily the best investment we made this year."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar avatar-3">EC</div>
+              <div class="author-info">
+                <strong>Elena Chen</strong>
+                <span>Director, Lumina Wellness Clinic</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 4. CONTACT SECTION ==================== -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="section-badge-center">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-heading">Ready To Build <span class="gradient-text">Something Great?</span></h2>
+          <p class="section-lead">
+            Have a project in mind or want to ask a question? Send us a message and we will respond within 24 business hours.
+          </p>
+        </div>
+
+        <div class="contact-wrapper">
+          <!-- Contact Info Details -->
+          <div class="contact-info-panel glass-card">
+            <h3 class="panel-title">Get in Touch Directly</h3>
+            <p class="panel-desc">
+              We would love to hear about your business goals. Reach out by phone, email, or schedule a free chat.
+            </p>
+
+            <div class="contact-detail-items">
+              <div class="contact-item">
+                <div class="item-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div class="item-text">
+                  <span class="item-label">Phone &amp; WhatsApp</span>
+                  <a href="tel:+18005550199" class="item-val">+1 (800) 555-0199</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="item-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="item-text">
+                  <span class="item-label">Email Support</span>
+                  <a href="mailto:hello@aurastudio.agency" class="item-val">hello@aurastudio.agency</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="item-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div class="item-text">
+                  <span class="item-label">Office Location</span>
+                  <span class="item-val">742 Evergreen Terrace, Suite 300<br>San Francisco, CA 94107</span>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="item-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </div>
+                <div class="item-text">
+                  <span class="item-label">Working Hours</span>
+                  <span class="item-val">Monday &ndash; Friday: 9am &ndash; 6pm EST</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Guarantee Box -->
+            <div class="guarantee-box">
+              <div class="shield-icon">🛡️</div>
+              <div>
+                <strong>Zero Obligation Guarantee</strong>
+                <p>Every consultation is 100% free with no sales pressure. We simply explore how we can help.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-panel glass-card">
+            <h3 class="form-heading">Send a Quick Message</h3>
+            <p class="form-sub">Fill out the form below and we'll reply right away.</p>
+
+            <form id="contact-form" class="interactive-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name">Full Name <span class="required">*</span></label>
+                  <input type="text" id="contact-name" name="name" placeholder="e.g. John Smith" required>
+                  <span class="error-msg" id="name-error">Please enter your name</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-email">Email Address <span class="required">*</span></label>
+                  <input type="email" id="contact-email" name="email" placeholder="e.g. john@example.com" required>
+                  <span class="error-msg" id="email-error">Please enter a valid email address</span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-phone">Phone Number (Optional)</label>
+                  <input type="tel" id="contact-phone" name="phone" placeholder="e.g. (555) 000-1234">
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-service">Service Needed</label>
+                  <select id="contact-service" name="service">
+                    <option value="General Inquiry">Select a service...</option>
+                    <option value="Web Design & Development">Web Design &amp; Development</option>
+                    <option value="Brand Identity & Strategy">Brand Identity &amp; Strategy</option>
+                    <option value="Local SEO & Growth Marketing">Local SEO &amp; Growth Marketing</option>
+                    <option value="Custom Project Package">Custom All-in-One Package</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">How can we help you? <span class="required">*</span></label>
+                <textarea id="contact-message" name="message" rows="4" placeholder="Tell us a little bit about your business and what you'd like to achieve..." required></textarea>
+                <span class="error-msg" id="message-error">Please share a brief message</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                <span class="btn-text">Send Message Now</span>
+                <span class="btn-spinner" aria-hidden="true"></span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-arrow">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+
+            <!-- Success Alert Modal / Box -->
+            <div class="form-success-alert" id="form-success-box" role="alert" style="display: none;">
+              <div class="success-icon-bubble">🎉</div>
+              <h4>Thank you! Message received.</h4>
+              <p>We've received your inquiry and our team will get back to you shortly at <strong id="success-email-display"></strong>.</p>
+              <button class="btn btn-outline btn-sm" id="reset-form-btn">Send Another Message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== 5. PROFESSIONAL FOOTER ==================== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Col 1: Brand & Tagline -->
+        <div class="footer-col brand-col">
+          <a href="#home" class="brand-logo footer-logo" aria-label="Aura Studio Home">
+            <div class="logo-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <span class="logo-text">Aura<span class="gradient-text">Studio</span></span>
+          </a>
+          <p class="footer-bio">
+            A boutique creative agency dedicated to empowering small businesses and startups with modern websites, standout branding, and profitable digital marketing.
+          </p>
+          <div class="social-links">
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Follow us on Twitter" title="Twitter / X">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Connect on LinkedIn" title="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Follow on Instagram" title="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Visit GitHub" title="GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Navigation</h4>
+          <ul class="footer-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Our Agency</a></li>
+            <li><a href="#services">Services &amp; Pricing</a></li>
+            <li><a href="#testimonials">Client Reviews</a></li>
+            <li><a href="#contact">Contact &amp; Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services Offered -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Our Services</h4>
+          <ul class="footer-nav">
+            <li><a href="#services">Custom Website Design</a></li>
+            <li><a href="#services">Mobile App Development</a></li>
+            <li><a href="#services">Logo &amp; Brand Guidelines</a></li>
+            <li><a href="#services">Local SEO Optimization</a></li>
+            <li><a href="#services">High-Speed Cloud Hosting</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Newsletter Signup -->
+        <div class="footer-col newsletter-col">
+          <h4 class="footer-heading">Growth Newsletter</h4>
+          <p class="newsletter-sub">Get practical, beginner-friendly tips on growing your business online. No spam, ever.</p>
+          <form id="newsletter-form" class="newsletter-form">
+            <div class="newsletter-input-group">
+              <input type="email" id="newsletter-email" placeholder="Your email address" required>
+              <button type="submit" class="btn btn-primary" id="newsletter-btn" aria-label="Subscribe to newsletter">Join</button>
+            </div>
+            <span class="newsletter-feedback" id="newsletter-feedback"></span>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Copyright & Legal -->
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="current-year">2026</span> Aura Studio, LLC. All rights reserved. Built with pride for small businesses.
+        </p>
+        <div class="footer-legal-links">
+          <a href="#home" class="legal-link" id="legal-privacy">Privacy Policy</a>
+          <span class="legal-sep">•</span>
+          <a href="#home" class="legal-link" id="legal-terms">Terms of Service</a>
+          <span class="legal-sep">•</span>
+          <a href="#home" class="legal-link" id="legal-cookies">Cookie Preferences</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== FLOATING BACK TO TOP BUTTON ==================== -->
+  <button class="back-to-top-btn" id="back-to-top" aria-label="Scroll back to top of page" title="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- ==================== TOAST NOTIFICATION POPUP ==================== -->
+  <div class="toast-notification" id="toast-notification" role="status" aria-live="polite">
+    <div class="toast-icon">✓</div>
+    <div class="toast-body">
+      <strong id="toast-title">Success</strong>
+      <span id="toast-message">Operation completed successfully.</span>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

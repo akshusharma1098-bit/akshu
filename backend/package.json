@@ -1,0 +1,25 @@
+{
+  "name": "smartcommute-backend",
+  "version": "1.0.0",
+  "description": "SmartCommute Node.js & Express API Server with AI Crowd Prediction Engine",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node src/server.js",
+    "test": "node tests/engine.test.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  },
+  "keywords": [
+    "smartcommute",
+    "transit",
+    "crowd-prediction",
+    "express",
+    "firebase"
+  ],
+  "author": "SmartCommute Team",
+  "license": "MIT"
+}
+
