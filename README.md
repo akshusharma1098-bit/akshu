@@ -1,48 +1,102 @@
-# 🌟 Aura Studio - Small Business Website
+# 🚌 SmartCommute – AI-Powered Smart Transport & Crowd Predictor
 
-Welcome to your brand new, professional website! This project is crafted with a modern, high-converting design that is clean, fast, mobile-friendly, and completely beginner-friendly.
+> **"Travel Smarter. Beat the Crowd."**
 
----
-
-## 🚀 How to Run & View Your Website
-
-### Option 1: Double-Click the Web Server (Recommended)
-1. Open your `D:\project` folder in Windows File Explorer.
-2. Double-click **`start-server.bat`**.
-3. A small black window will appear saying:
-   ```
-   AURA STUDIO LOCAL WEB SERVER IS ACTIVE AND RUNNING!
-   URL: http://localhost:8080/
-   ```
-4. Open Google Chrome and go to:
-   ```
-   http://localhost:8080/
-   ```
-5. **To stop the server:** Simply close that terminal window or press `Ctrl + C`.
+SmartCommute is a modern, responsive, and functional public transportation web and mobile platform designed to help commuters find less crowded routes (buses, metros, trains) and make smarter travel decisions using community-reported density and predictive AI analytics.
 
 ---
 
-### Option 2: The Direct Browser Way (No Server Needed)
-1. In `D:\project`, find the file named **`index.html`**.
-2. **Double-click** `index.html` (or right-click and choose **Open with > Google Chrome**).
-3. The website opens immediately in your browser!
+## 🌟 Key Innovations
+
+1. **Community-Powered Real-Time Crowd Intelligence**: Commuters submit live crowd levels (`EMPTY`, `MODERATE`, `CROWDED`) with anti-spam rate limiting.
+2. **AI Crowd Prediction Engine**: Synthesizes historical time-series matrices, day-of-week trends, and time-decayed exponential weights ($e^{-\Delta t / \tau}$) to forecast upcoming crowd density up to 4 hours in advance.
+3. **Smart Multi-Route Optimization**: Evaluates alternative routes using a composite penalty function balancing travel duration and crowd congestion ($Duration \times W_t + Crowd \times W_c$).
+4. **Interactive Leaflet Transit Map**: Visualizes Kota, Rajasthan stops, route paths, real-time vehicle arrivals, and live crowd color indicators (Green = Low, Yellow = Moderate, Red = High).
+5. **Admin Operations Console**: Route-wise passenger flow analytics, KPI cards, and moderation queue for verifying/removing user reports.
 
 ---
 
-## 📁 What Each File Does (In Plain English)
+## 🗂️ Project Architecture
 
-| File | What It Does |
-| :--- | :--- |
-| **`index.html`** | The content and layout of your website (Home, About, Services, Contact, Footer). |
-| **`style.css`** | The visual design (colors, fonts, glassmorphism cards, buttons, dark/light themes). |
-| **`script.js`** | The interactivity (theme toggle, mobile menu, form validation, smooth scrolling). |
-| **`server.ps1`** | A lightweight local web server script that uses native Windows PowerShell. |
-| **`start-server.bat`** | A double-clickable shortcut that starts the server with one click. |
+```
+d:\project\
+  ├── backend\
+  │   ├── src\
+  │   │   ├── config\
+  │   │   │   └── firebase.js          # Realtime DB & In-Memory Store Adapter
+  │   │   ├── data\
+  │   │   │   └── kotaTransitData.js   # Kota stops, routes, and hourly matrices
+  │   │   ├── engine\
+  │   │   │   ├── predictionEngine.js  # AI crowd forecasting algorithm
+  │   │   │   └── routeOptimizer.js    # Multi-route penalty optimization
+  │   │   ├── middleware\
+  │   │   │   └── rateLimiter.js       # Anti-spam token bucket guard
+  │   │   ├── routes\
+  │   │   │   ├── authRoutes.js        # Authentication & guest demo logins
+  │   │   │   ├── crowdRoutes.js       # Live report broadcasting & density feeds
+  │   │   │   ├── transportRoutes.js   # Stops, routes, and route suggestions
+  │   │   │   ├── predictionRoutes.js  # Prediction API queries
+  │   │   │   └── adminRoutes.js       # Admin KPIs and moderation
+  │   │   └── server.js                # Native zero-dependency REST HTTP server
+  │   ├── package.json
+  │   └── .env.example
+  │
+  ├── frontend\
+  │   ├── src\
+  │   │   ├── components\
+  │   │   │   ├── BottomNav.js         # Tab navigation bar
+  │   │   │   ├── CrowdBadge.js        # Green/Yellow/Red status indicator
+  │   │   │   ├── Header.js            # App top bar with Kota demo pill
+  │   │   │   ├── PredictionBar.js     # Live vs Predicted crowd curve
+  │   │   │   ├── ReportModal.js       # 3-step crowd report dialog
+  │   │   │   ├── RouteCard.js         # Route card with AI recommendation banner
+  │   │   │   └── TransportMap.js      # Leaflet.js interactive transit map
+  │   │   ├── config\
+  │   │   │   ├── firebase.js          # Firebase client config & fallback DB
+  │   │   │   └── theme.js             # Design tokens & color palette
+  │   │   ├── data\
+  │   │   │   └── demoData.js          # High-fidelity Kota demo dataset
+  │   │   ├── screens\
+  │   │   │   ├── SplashScreen.js       # 1. Splash Screen
+  │   │   │   ├── OnboardingScreen.js   # 2. Onboarding Screen
+  │   │   │   ├── AuthScreen.js         # 3. Login, Register & Guest Mode
+  │   │   │   ├── DashboardScreen.js    # 4. Smart Home Dashboard
+  │   │   │   ├── SearchScreen.js       # 5. Search Destination & Preferences
+  │   │   │   ├── MapScreen.js          # 6. Interactive Transport Map
+  │   │   │   ├── RouteComparisonScreen.js # 7. Route Comparison & Forecasts
+  │   │   │   ├── CrowdReportScreen.js  # 8. Live Crowd Reporting Sentinel
+  │   │   │   ├── NotificationsScreen.js# 9. Real-time Transit Alerts
+  │   │   │   ├── ProfileScreen.js      # 10. User Profile & Preferences
+  │   │   │   └── AdminDashboardScreen.js # 11. Transit Authority Admin Console
+  │   │   └── App.js                   # Root React Native / Web controller
+  │   ├── app.json                     # Expo configuration
+  │   └── package.json
+  │
+  ├── push-to-github.bat               # 1-Click script to push code to GitHub
+  ├── .gitignore                       # Clean Git exclusion rules
+  └── README.md
+```
 
 ---
 
-## 🛠️ How to Customize Your Website
+## 🚀 How to Run the Backend Server
 
-- **Update Phone & Email:** Open `index.html` in Notepad or VS Code and search for `hello@aurastudio.agency` or `+1 (800) 555-0199`.
-- **Change Services & Prices:** Search for `<!-- 3. SERVICES SECTION -->` in `index.html`.
-- **Adjust Colors:** Open `style.css` and modify the values at the top under `:root`.
+The backend is built with a zero-external-dependency architecture on Node.js native HTTP modules, which means it starts instantly without needing `npm install`:
+
+```bash
+# Start backend server
+node backend/src/server.js
+```
+
+Backend will be active at: `http://localhost:5000/api/`
+
+### Available API Endpoints:
+- `GET  /api/health` — System status
+- `GET  /api/transport/stops` — All 12 monitored Kota stops
+- `GET  /api/transport/routes` — Active Kota transit lines
+- `POST /api/transport/optimize` — Multi-route AI optimizer
+- `GET  /api/crowd/reports` — Real-time crowd reports feed
+- `POST /api/crowd/report` — Submit new crowd report
+- `GET  /api/crowd/density` — City-wide crowd summary
+- `GET  /api/predict` — AI prediction for upcoming hours
+- `GET  /api/admin/stats` — Admin metrics and moderation queue
